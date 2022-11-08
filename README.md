@@ -41,13 +41,16 @@ $\frac{\part{f(g(x))}}{\part{x}} = \frac{\part{f(g(x)}}{\part{g(x)}}.\frac{\part
 ## Data Augmentation Policy
 We apply random data augmentation techniques to train data only. 
 ### 1. Random Cropping
-Use `transforms.RandomCrop()` from PyTorch to cut random image patches from the original image. Patch size (24\*24) out of (32\*32) with a padding of 4.\n
+Use `transforms.RandomCrop()` from PyTorch to cut random image patches from the original image. Patch size (24\*24) out of (32\*32) with a padding of 4.
+
 ![image-1](https://pytorch.org/vision/stable/_images/sphx_glr_plot_transforms_012.png)
 
 ### 2. Random Rotation
-Use `transforms.RandomRotation()` from PyTorch to rotate images by a random degree. Degrees ranges from 0 to 180.\n
+Use `transforms.RandomRotation()` from PyTorch to rotate images by a random degree. Degrees ranges from 0 to 180.
+
 ![image-2](https://pytorch.org/vision/stable/_images/sphx_glr_plot_transforms_009.png)
 
 ### 3. Random Horizontal flipping
-Use `transforms.RandomHorizontalFlip()` from PyTorch to randomly flip images.\n
+Use `transforms.RandomHorizontalFlip()` from PyTorch to randomly flip images.
+
 ![image-3](https://pytorch.org/vision/stable/_images/sphx_glr_plot_transforms_024.png)
